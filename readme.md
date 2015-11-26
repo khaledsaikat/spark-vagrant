@@ -12,12 +12,13 @@ Vagrant box with spark pre-installed
 
 ## Requirements
 
-- [Vagrant](http://www.vagrantup.com/downloads.html)
-- [VirtualBox 5.x](https://www.virtualbox.org/wiki/Downloads)
+- Download and install the latest [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- Download and install thelatest [Vagrant](http://www.vagrantup.com/downloads.html)
+- Make sure virtualization is enabled in your BIOS.
 
 ## Get Started
 
-After installing requirements and cloning this repository, we need to make a vagrant box and install spark and dependencies on it.
+After installing requirements and cloning this repository, we need to make a vagrant box and install spark and dependencies into it.
 To do this, run following commands from project root
 
 Go to the project root and run:
@@ -35,11 +36,13 @@ vagrant ssh
 ```
 
 To stop the virtual machine:
+
 ```
 vagrant halt
 ```
 
 To start again:
+
 ```
 vagrant up
 ```
