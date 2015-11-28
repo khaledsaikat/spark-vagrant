@@ -7,7 +7,8 @@ Vagrant box with spark pre-installed
 ### This vagrant box includes:
 
 - Ubuntu 14.04 LTS (trusty64)
-- Java
+- Java (openjdk-8)
+- maven 3.3.9
 - Spark-1.5.2 for Hadoop-2.6+
 
 ## Requirements
@@ -47,10 +48,26 @@ To start again:
 vagrant up
 ```
 
-### Running spark-shell
-Spark has been installed on home directory. After ssh to virtual machine, run following commands:
+To provision the vm:
 
 ```
-cd ~/spark
+vagrant provision
+```
+
+### Running spark-shell
+Spark has been installed on /opt/spark directory and bin directory has been added to system path. After ssh to virtual machine, run following commands:
+
+```
+spark-shell
+```
+
+Or with full path
+
+```
+cd /opt/spark
 ./bin/spark-shell
 ```
+
+### Directory: projects
+
+projects directory is synchronized with virtual machine's /home/vagrant/projects directory. That means, any changes made on inside projects directory will immediately reflect on VM and vice versa.

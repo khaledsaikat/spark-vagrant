@@ -10,10 +10,10 @@ echo "Get updates..."
 sudo apt-get update -y > /dev/null
 
 echo "Upgrade packages..."
-sudo apt-get upgrade -y
+sudo apt-get upgrade -y  > /dev/null
 
-echo "Installing Git"
+echo "Installing Git..."
 sudo apt-get install git -y > /dev/null
 
-echo "Install nfs prerequisites"
+echo "Installing nfs prerequisites..."
 sudo apt-get install nfs-common portmap -y > /dev/null
