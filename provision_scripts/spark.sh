@@ -13,7 +13,13 @@ echo "Installing Java (openjdk-8)..."
 sudo apt-get install openjdk-8-jdk -y > /dev/null
 
 
-
+##
+# Create temp directory
+##
+if [ ! -d /vagrant/temp ]; then
+    echo "Create temp directory"
+    mkdir /vagrant/temp
+fi
 
 
 ##
@@ -45,9 +51,6 @@ if [ ! -p /opt/spark/bin ]; then
 fi
 
 
-
-
-
 ##
 # Installing Maven
 ##
@@ -75,9 +78,6 @@ fi
 
 # Installl by apt-get
 #sudo apt-get install -y maven > /dev/null
-
-
-
 
 
 ##

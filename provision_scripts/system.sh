@@ -9,8 +9,8 @@ sudo dpkg-reconfigure locales
 echo "Get updates..."
 sudo apt-get update -y > /dev/null
 
-echo "Upgrade packages..."
-sudo apt-get upgrade -y  > /dev/null
+#echo "Upgrade packages..."
+#sudo apt-get upgrade -y  > /dev/null
 
 echo "Installing Git..."
 sudo apt-get install git -y > /dev/null
