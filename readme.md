@@ -73,7 +73,7 @@ cd /opt/spark
 
 projects directory is synchronized with virtual machine's ```/home/vagrant/projects``` directory. That means, any changes made on inside projects directory will immediately reflect on VM and vice versa.
 
-## Ubuntu 12.04 LTS (precise32)
+### Ubuntu 12.04 LTS (precise32)
 
 If there are some issues for using ubuntu 14.04 or latest one, Ubuntu 12.04 could be useful. hashicorp/precise32 box can run without enabling virtualization.
 
