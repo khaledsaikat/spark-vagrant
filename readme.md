@@ -56,7 +56,7 @@ vagrant provision
 ```
 
 ### Running spark-shell
-Spark has been installed on ```/opt/spark``` directory and bin directory has been added to system path. After ssh to virtual machine, run following commands:
+Spark has been installed on ```/opt/spark``` directory and ```bin``` directory has been added to system path. After ssh to virtual machine, run following commands:
 
 ```
 spark-shell
@@ -71,19 +71,19 @@ cd /opt/spark
 
 ### Directory: projects
 
-projects directory is synchronized with virtual machine's ```/home/vagrant/projects``` directory. That means, any changes made on inside projects directory will immediately reflect on VM and vice versa.
+The ```projects``` directory is synchronized with virtual machine's ```~/projects``` directory. That means, any changes made on inside projects directory will immediately reflect on VM and vice versa.
 
 ### Ubuntu 12.04 LTS (precise32)
 
 If there are some issues for using ubuntu 14.04 or latest one, Ubuntu 12.04 could be useful. hashicorp/precise32 box can run without enabling virtualization.
 
-To use hashicorp/precise32 checkout ```ubuntu-12.04``` branch on local machine:
+To use ```hashicorp/precise32``` checkout ```ubuntu-12.04``` branch on local machine:
 
 ```
 git checkout ubuntu-12.04
 ```
 
-If one VM is already running, we need to destroy that first, to do that:
+If one VM is already running, we need to destroy that first, to do so, run:
 
 ```
 vagrant destroy
