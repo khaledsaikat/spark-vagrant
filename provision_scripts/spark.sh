@@ -79,6 +79,13 @@ fi
 # Installl by apt-get
 #sudo apt-get install -y maven > /dev/null
 
+# Add aopenjdk to repository for ubuntu 14.04 and earlier
+echo "Add latest repo for gradle."
+sudo add-apt-repository ppa:cwchien/gradle -y > /dev/null
+sudo apt-get update > /dev/null
+
+echo "Installing gradle"
+sudo apt-get install gradle -y > /dev/null
 
 ##
 # Cleanup

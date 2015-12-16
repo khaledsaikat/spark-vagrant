@@ -9,6 +9,7 @@ Vagrant box with spark pre-installed
 - Ubuntu 14.04 LTS (trusty64)
 - Java (openjdk-8)
 - Maven 3.3.9
+- Gradle 2.9+
 - Spark-1.5.2 for Hadoop-2.6+
 - Git
 
